@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>medicine_main</class>
+ <widget class="QTabWidget" name="medicine_main">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>大塚製藥自動備份</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icon/database.png</normaloff>../icon/database.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>大塚製藥自動備份</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#btn_start_monitor_i6:hover , #btn_stop_monitor_i6:hover , #btn_reoad_by_month:hover , #rts_1:hover , #rts_2:hover , #rts_3:hover , #rts_4:hover , #rts_5:hover , #rts_6:hover , #rts_7:hover , #rts_8:hover , #rts_9:hover , #rts_10:hover , #rts_11:hover , #rts_12:hover , #rts_13:hover , #rts_14:hover , #rts_15:hover , #rts_16:hover , #rts_17:hover ,  #rts_18:hover{
+background-color:gray;
+color:white;
+}
+#btn_start_monitor_i6 , #btn_stop_monitor_i6 , #btn_reoad_by_month{
+background-color:#cccccc;
+border-radius:10px;
+padding:3px 3px;
+}
+#monitor_item1:hover, #monitor_item2:hover , #monitor_item3:hover , #monitor_item4:hover , #monitor_item5:hover , #monitor_item1_2:hover , #monitor_item2_2:hover , #monitor_item3_2:hover , #monitor_item4_2:hover, #monitor_item5_2:hover , #a_user:hover , #a_pwd:hover , #a_r_time:hover , #a_status:hover , #reload_final_record_by_month:hover , #btn_i6_1_temp_chart:hover , #btn_i6_1_rh_chart:hover , #btn_i6_1_pr_chart:hover , #btn_i6_1_nh3_chart:hover , #btn_i6_1_h2s_chart:hover , #btn_i6_1_temp_stop_chart:hover , #realtime_i6_2_statusbar:hover , #i6_1_amount_chart:hover ,  #btn_start_rtms:hover , #btn_stop_rtms:hover{
+background-color:gray;
+color:white;
+}
+#monitor_item1 , #monitor_item2 , #monitor_item3 , #monitor_item4 , #monitor_item5 , #monitor_item1_2 , #monitor_item2_2 , #monitor_item3_2 , #monitor_item4_2 , #monitor_item5_2 , #reload_final_record_by_month , #a_user , #a_pwd , #a_r_time , #a_status , #btn_i6_1_temp_chart , #btn_i6_1_rh_chart , #btn_i6_1_pr_chart , #btn_i6_1_nh3_chart , #btn_i6_1_h2s_chart , #realtime_i6_2_statusbar , #btn_i6_1_temp_stop_chart , #i6_1_amount_chart , #btn_start_rtms , #btn_stop_rtms , #rts_1, #rts_2, #rts_3, #rts_4, #rts_5, #rts_6, #rts_7, #rts_8, #rts_9, #rts_10, #rts_11, #rts_12 , #rts_13 , #rts_14 , #rts_15 , #rts_16 , #rts_17 ,  #rts_18{
+background-color:#cccccc;
+border-radius:10px;
+padding:3px 3px;
+}
+</string>
+  </property>
+  <property name="currentIndex">
+   <number>2</number>
+  </property>
+  <widget class="QWidget" name="tab_realtime_monitor">
+   <attribute name="icon">
+    <iconset>
+     <normaloff>../icon/icons8-sync-48.png</normaloff>../icon/icons8-sync-48.png</iconset>
+   </attribute>
+   <attribute name="title">
+    <string>即時數據</string>
+   </attribute>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="2" column="1">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>I6-1</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="rts_time_1">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_1">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_2">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_3">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_4">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_5">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_6">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_7">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_8">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGraphicsView" name="medicine_img">
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>I6-2</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="rts_time_2">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_9">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_10">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_11">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_12">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_13">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_14">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_15">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rts_16">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="btn_stop_rtms">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>停止</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../icon/icons8-close-window-94.png</normaloff>../icon/icons8-close-window-94.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="btn_start_rtms">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>啟動</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../icon/icons8-start-48.png</normaloff>../icon/icons8-start-48.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="tab_realtime">
+   <attribute name="icon">
+    <iconset>
+     <normaloff>../icon/school-material.png</normaloff>../icon/school-material.png</iconset>
+   </attribute>
+   <attribute name="title">
+    <string>數據清單</string>
+   </attribute>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>I6 - 2</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QListWidget" name="realtime_monitor_i6_list_2">
+         <property name="font">
+          <font>
+           <family>Microsoft JhengHei</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string>I6 - 1</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QTreeWidget" name="realtime_monitor_i6_list">
+           <property name="font">
+            <font>
+             <family>Microsoft JhengHei</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="cursor" stdset="0">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <column>
+            <property name="text">
+             <string>監控時間</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>溫度</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>濕度</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>大氣壓力</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>氨氣</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>硫化氫</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="tab_backup_month">
+   <attribute name="icon">
+    <iconset>
+     <normaloff>../icon/db_storage.ico</normaloff>../icon/db_storage.ico</iconset>
+   </attribute>
+   <attribute name="title">
+    <string>備份</string>
+   </attribute>
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="title">
+         <string>備份</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="title">
+            <string>月備份統計清單</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QTreeWidget" name="backup_by_month">
+              <property name="font">
+               <font>
+                <family>Microsoft JhengHei</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="cursor" stdset="0">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <column>
+               <property name="text">
+                <string>日期</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>總筆數</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="title">
+               <string>說明</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="font">
+                  <font>
+                   <family>Microsoft JhengHei</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>( 按一下 ) 顯示當月每日記錄，( 按兩下 ) 下載當月PDF備份記錄</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="title">
+            <string>日備份統計清單</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QTreeWidget" name="backup_by_month_day">
+              <property name="font">
+               <font>
+                <family>Microsoft JhengHei</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="cursor" stdset="0">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <column>
+               <property name="text">
+                <string>日期</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>總筆數</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_13">
+              <property name="title">
+               <string>說明</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="font">
+                  <font>
+                   <family>Microsoft JhengHei</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>( 按兩下 ) 下載當日PDF備份記錄</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_11">
+           <property name="title">
+            <string>刷新</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="reload_final_record_by_month">
+              <property name="font">
+               <font>
+                <family>Microsoft JhengHei</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="btn_reoad_by_month">
+              <property name="font">
+               <font>
+                <family>Microsoft JhengHei</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>重新整理月備份總數</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../icon/icons8-backup-64.png</normaloff>../icon/icons8-backup-64.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/icon">
+    <file>icon/bullet-list.png</file>
+    <file>icon/camera.png</file>
+    <file>icon/database.png</file>
+    <file>icon/logout.png</file>
+    <file>icon/school-material.png</file>
+  </qresource>
+</RCC>
